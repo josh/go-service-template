@@ -1,0 +1,9 @@
+[Unit]
+Description=Example service
+Documentation=https://github.com/josh/example
+Requires=example.socket
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/example
+DynamicUser=true
